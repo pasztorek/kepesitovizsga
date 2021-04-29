@@ -26,12 +26,11 @@ public class JurassicPark {
                 Connection conn = dataSource.getConnection();
                 PreparedStatement stmt = conn.prepareStatement("SELECT breed FROM dinosaur WHERE actual > expected ORDER BY breed")) {
 
-          //  stmt.setString(1, firstName);
-           // stmt.setString(2, lastName);
+
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-              //  resultip = rs.getString("ip_address");
+
                 result.add(rs.getString("breed"));
 
             }
