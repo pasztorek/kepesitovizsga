@@ -22,6 +22,7 @@ public class Phonebook {
 
                 if(contacts.size()>1) {
                     String line = entry.getKey() + ": " + entry.getValue() + ", ";
+
                 }
 
                 else {
