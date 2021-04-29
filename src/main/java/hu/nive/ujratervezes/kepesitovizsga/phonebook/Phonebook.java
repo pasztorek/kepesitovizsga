@@ -20,7 +20,7 @@ public class Phonebook {
 
             for (Map.Entry<String, String> entry: contacts.entrySet()) {
 
-                if(contacts.size()>1) {
+                 if(contacts.size()>1) {
                     String line = entry.getKey() + ": " + entry.getValue() + ", ";
 
                 }

@@ -27,7 +27,7 @@ public class JurassicPark {
                 PreparedStatement stmt = conn.prepareStatement("SELECT breed FROM dinosaur WHERE actual > expected ORDER BY breed")) {
 
 
-            ResultSet rs = stmt.executeQuery();
+             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
 
@@ -38,9 +38,6 @@ public class JurassicPark {
         } catch (SQLException se) {
             throw new IllegalStateException("Cannot select employees", se);
         }
-
-
-
 
         return result;
     }
